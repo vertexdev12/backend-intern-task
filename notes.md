@@ -5,3 +5,4 @@
 - Validation is done with pydantic (empty id, blank text/question, top_k 1..10, empty documents list all give 422).
 - With more time: add tests for edge cases (duplicate ids in one request, ties, overlap/size errors), use numpy/vector index for large stores, add a lock for concurrent writes.
 - AI tools used: Claude (for drafting and reviewing the code); I read and tested everything myself.
+- CI/CD: Automated tests run via GitHub Actions on pushes and pull requests to verify code changes and test coverage.
